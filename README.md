@@ -4,12 +4,14 @@ Krullu for RestAPI Education
 
 ## Getting Started
 
-IT특성화고 졸업생이자 연구소에 재직하는 현업 뉴비 개발자로써 고등학교때 배웠으면 좋았을 RestAPI라는
+IT특성화고 졸업생이자 연구소에 재직하는 현업 뉴비 개발자로써 고등학교때 배웠으면 좋았을 
+
+RestAPI라는
 개념에 대하여 이해하고 실습해 볼 수 있는 학습 모듈을 만들어보고자 시작된 프로젝트
 
 ### How to Build & Start 
 
-아래의 명령어로 프로젝트를 빌드할 수 있습니다.(JAVA 18 사용)
+아래의 명령어로 프로젝트를 빌드할 수 있습니다.(Open JDK 18 사용)
 
 ```
 ./gradlew bootRun
