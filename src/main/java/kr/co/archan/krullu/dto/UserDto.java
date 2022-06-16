@@ -1,13 +1,13 @@
 package kr.co.archan.krullu.dto;
 
+import kr.co.archan.krullu.extension.Role;
 import lombok.*;
-
-import kr.co.archan.krullu.entity.userEntity;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Getter @Setter
 public class UserDto {
 
     private String username;
@@ -18,17 +18,6 @@ public class UserDto {
 
     private String email;
 
-    private userEntity.Role role;
+    private Role role;
 
-    public userEntity toEntity() {
-        userEntity ue = userEntity.builder()
-                .username(username)
-                .password(password)
-                .nickname(nickname)
-                .email(email)
-                .role(userEntity.Role.USER)
-                .build();
-
-        return ue;
-    }
 }

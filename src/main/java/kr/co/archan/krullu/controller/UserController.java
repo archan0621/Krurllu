@@ -1,27 +1,16 @@
 package kr.co.archan.krullu.controller;
 
-import kr.co.archan.krullu.jpaRepo.TestRepository;
-import kr.co.archan.krullu.entity.testEntity;
+
+import kr.co.archan.krullu.service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.List;
-
-@RestController
+@RequestMapping("/users")
+@Controller
 @RequiredArgsConstructor
 public class UserController {
-
-    private final TestRepository testRepository;
-
-    @GetMapping("/dbcon")
-    public List<testEntity> dbTest(){
-        return testRepository.findAll();
-    }
-
-    @GetMapping("/connection")
-    public String conTest(){
-        return("pong!");
-    }
 
 }

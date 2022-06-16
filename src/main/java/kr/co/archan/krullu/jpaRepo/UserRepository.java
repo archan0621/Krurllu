@@ -1,14 +1,12 @@
 package kr.co.archan.krullu.jpaRepo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import kr.co.archan.krullu.entity.userEntity;
+import kr.co.archan.krullu.entity.UserEntity;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
-public interface UserRepository extends JpaRepository<userEntity, Long> {
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
 
-    Optional<userEntity> findByUsername(String username);
+    UserEntity findByEmail(String email);
 
 }
