@@ -14,3 +14,7 @@ create table chk(
 );
 
 insert into chk value(1,1);
+
+show tables;
+
+desc members;
