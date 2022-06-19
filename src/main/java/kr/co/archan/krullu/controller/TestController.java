@@ -1,6 +1,6 @@
 package kr.co.archan.krullu.controller;
 
-import kr.co.archan.krullu.jpaRepo.TestRepository;
+import kr.co.archan.krullu.repository.TestRepository;
 import kr.co.archan.krullu.entity.testEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

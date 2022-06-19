@@ -1,21 +1,15 @@
 package kr.co.archan.krullu.servicetest;
 
-import kr.co.archan.krullu.dto.UserDto;
-import kr.co.archan.krullu.entity.UserEntity;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.transaction.annotation.Transactional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
-import kr.co.archan.krullu.service.UserService;
 
 @SpringBootTest
 @Transactional
