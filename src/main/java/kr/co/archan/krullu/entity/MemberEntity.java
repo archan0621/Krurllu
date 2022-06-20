@@ -5,6 +5,7 @@ import kr.co.archan.krullu.extension.Salt;
 import kr.co.archan.krullu.extension.UserRole;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -42,6 +43,7 @@ public class MemberEntity {
     private UserRole role = UserRole.ROLE_NOT_PERMITTED;
 
     @OneToOne
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     @JoinColumn(name = "salt_id")
     private Salt salt;
 
