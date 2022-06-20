@@ -18,3 +18,7 @@ insert into chk value(1,1);
 show tables;
 
 desc members;
+
+select * from members;
+
+show tables;
